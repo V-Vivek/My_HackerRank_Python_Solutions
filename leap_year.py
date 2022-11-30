@@ -1,4 +1,4 @@
-# Question : https://www.hackerrank.com/challenges/write-a-function/problem?isFullScreen=true
+# Question : https://www.hackerrank.com/challenges/write-a-function/problem
 def is_leap(year):
     leap = False
     # To check century leap years

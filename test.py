@@ -1,5 +1,7 @@
-N = int(input())
-arr = set(map(float, input().split()))
+s1 = {1, 2, 3, 4}
+s2 = {1, 2, 5, 6}
 
-avg = sum(arr) / len(arr)
-print(round(avg, 3))
+result = list((s1-s2).union(s2-s1))
+result.sort()
+for x in result:
+    print(x)

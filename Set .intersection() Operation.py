@@ -1,3 +1,5 @@
+# Question: https://www.hackerrank.com/challenges/py-set-intersection-operation/problem?isFullScreen=true
+
 n = int(input())
 english = set(map(int, input().split()))
 b = int(input())

@@ -1,16 +1,7 @@
-n = int(input())
-A = set(map(int, input().split()))
-N = int(input())
-for _ in range(N):
-    command, count = input().split()
-    other_set = set(map(int, input().split()))
-    if command == 'update':
-        A |= other_set
-    elif command == 'intersection_update':
-        A &= other_set
-    elif command == 'difference_update':
-        A -= other_set
-    elif command == 'symmetric_difference_update':
-        A ^= other_set
+k = 5
+room_number_list = [1, 2, 3, 6, 5, 4, 4, 2, 5, 3, 6, 1, 6, 5, 3, 2, 4, 1, 2, 5, 1, 4, 3, 6, 8, 4, 3, 1, 5, 6, 2]
+unique_rooms = list(set(room_number_list))
 
-print(sum(A))
+for _ in unique_rooms:
+    if room_number_list.count(_) != k:
+        print(_)

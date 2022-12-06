@@ -1,3 +1,5 @@
+# Question: https://www.hackerrank.com/challenges/py-set-mutations/problem?isFullScreen=true
+
 n = int(input())
 A = set(map(int, input().split()))
 N = int(input())

@@ -1,14 +1,6 @@
-a = set(map(int, input().split()))
-n = int(input())
-result = True
-for i in range(n):
-    b = set(map(int, input().split()))
-    if a == b:
-        result = False
-        break
-    elif a.issuperset(b):
-        continue
-    else:
-        result = False
-        break
-print(result)
+a = int(input())
+b = int(input())
+m = int(input())
+
+print(pow(a, b))
+print(pow(a, b, m))

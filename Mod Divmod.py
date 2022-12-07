@@ -3,6 +3,6 @@
 a = int(input())
 b = int(input())
 
-print(divmod(a, b)[0])
-print(divmod(a, b)[1])
-print(divmod(a, b))
+print(divmod(a, b)[0]) # To get the quotient
+print(divmod(a, b)[1]) # To get the remainder
+print(divmod(a, b)) # divmod returns a tuple of quotient & remainder

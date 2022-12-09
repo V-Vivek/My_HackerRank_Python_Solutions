@@ -1,3 +1,5 @@
+# Question: https://www.hackerrank.com/challenges/exceptions/problem
+
 t = int(input())
 for i in range(t):
     a, b = input().split()
@@ -7,4 +9,3 @@ for i in range(t):
         print("Error Code:",err)
     except ValueError as err:
         print("Error Code:",err)
-

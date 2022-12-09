@@ -1,27 +1,28 @@
-def minion_game(string):
+from collections import defaultdict
+a = defaultdict(list)
 
-    vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
-    vowels_score = 0
-    consonants_score = 0
-    l = len(string)
+n, m = map(int, input().split())
+for i in range(1, n+1):
+    a[input()].append(str(i))
 
-    for i in range(l):
-        if string[i] in vowels:
-            vowels_score += len(string[i:l])
-        else:
-            consonants_score += len(string[i:l])
-
-
-    if consonants_score > vowels_score:
-        print('Stuart', consonants_score)
-    elif consonants_score < vowels_score:
-        print('Kevin', vowels_score)
+for j in range(1, m+1):
+    inp = input()
+    if inp in a:
+        print(' '.join(a[inp]))
     else:
-        print('Draw')
-    print(vowels_score)
-    print(consonants_score)
+        print(-1)
+
+# from collections import defaultdict
+# d = defaultdict(list)
+# list1=[]
+# n, m = map(int,input().split())
+# for i in range(1, n+1):
+#     d[input()].append(str(i))
 
 
-if __name__ == '__main__':
-    s = input()
-    minion_game(s)
+# for i in range(m):
+#     b = input()
+#     if b in d: 
+#         print(' '.join(d[b]))
+#     else: 
+#         print(-1)

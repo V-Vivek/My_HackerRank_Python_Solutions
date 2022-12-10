@@ -1,10 +1,5 @@
-t = int(input())
-for i in range(t):
-    a, b = input().split()
-    try:
-        print(int(a) // int(b))
-    except ZeroDivisionError as err:
-        print("Error Code:",err)
-    except ValueError as err:
-        print("Error Code:",err)
+import calendar
 
+weekday = ('MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY')
+month, day, year = map(int, input().split())
+print(weekday[calendar.weekday(year, month, day)])

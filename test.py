@@ -1,22 +1,11 @@
-from collections import namedtuple
+from collections import defaultdict
+d1 = defaultdict(int)
 
-total = 0
-N = int(input()) 
-columns = input()
-for i, column_name in enumerate(columns.split()):
-    if column_name == 'ID':
-        id = i
-    elif column_name == 'MARKS':
-        marks = i
-    elif column_name == 'CLASS':
-        cls = i
-    else:
-        name = i
+n = int(input()) 
+for _ in range(n):
+    word = input()
+    d1[word] += 1
 
-student = namedtuple('student', columns)
-for _ in range(N):
-    a, b, c, d = input().split()
-    data = student(a, b, c, d)
-    total += int(data[marks])
-
-print(round(total/N, 2))
+print(len(d1.items()))
+for x in d1.values():
+    print(x)

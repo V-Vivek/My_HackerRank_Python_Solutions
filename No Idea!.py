@@ -1,3 +1,5 @@
+# Question: https://www.hackerrank.com/challenges/no-idea/problem
+
 happiness = 0
 n, m = map(int, input().split())
 arr = map(int, input().split())

@@ -1,14 +1,19 @@
-happiness = 0
-n, m = map(int, input().split())
-arr = map(int, input().split())
+s = '123456789'
 
-a = set(map(int, input().split()))
-b = set(map(int, input().split()))
-
-for i in arr:
-    if i in a:
-        happiness += 1
-    elif i in b:
-        happiness -= 1
-
-print(happiness)
+i = 0
+while i<len(s):
+    j = i + 1
+    count = 1
+    if j < len(s):
+        while s[j] == s[i]:
+            count += 1
+            if j+1 < len(s):
+                j += 1
+            else:
+                break
+    if s[i-1] == s[i]:
+        pass
+    else:
+        print(tuple([count, int(s[i])]), end = ' ')
+    # print(i)
+    i = j

@@ -1,3 +1,6 @@
+
+# Question: https://www.hackerrank.com/challenges/piling-up/problem
+
 t = int(input())
 for i in range(t):
     n = int(input())
